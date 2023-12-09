@@ -35,7 +35,7 @@ DJANGO_APPS = [
 ]
 
 THIRD_PARTY_APPS= [
-    "rest_framework", "django_filter", "django_countries", "phonenumber_fields", "drf_yasg","corsheaders"
+    "rest_framework", "django_filters", "django_countries", "phonenumber_field", "drf_yasg","corsheaders"
 
 ]
 

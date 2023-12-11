@@ -11,7 +11,7 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-#TODO change it in production
+# TODO change it in production
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "IC_api.settings.local")
 

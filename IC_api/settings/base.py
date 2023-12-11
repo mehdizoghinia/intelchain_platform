@@ -34,14 +34,16 @@ DJANGO_APPS = [
     "django.contrib.sites",
 ]
 
-THIRD_PARTY_APPS= [
-    "rest_framework", "django_filters", "django_countries", "phonenumber_field", "drf_yasg","corsheaders"
-
+THIRD_PARTY_APPS = [
+    "rest_framework",
+    "django_filters",
+    "django_countries",
+    "phonenumber_field",
+    "drf_yasg",
+    "corsheaders",
 ]
 
-LOCAL_APPS = [
-    "core_apps.common", "core_apps.users"
-]
+LOCAL_APPS = ["core_apps.common", "core_apps.users"]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 

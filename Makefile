@@ -31,8 +31,8 @@ down-v:
 volume:
 	docker volume inspect src_local_postgres_data
 
-authors-db:
-	docker compose -f local.yml exec postgres psql --username=mehdi --dbname=authors-live
+intelchain_db:
+	docker compose -f local.yml exec postgres psql --username=mehdizoghinia --dbname=intelchain_db
 
 flake8:
 	docker compose -f local.yml exec api flake8 .

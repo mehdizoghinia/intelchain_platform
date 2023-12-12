@@ -6,7 +6,7 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    #TODO change it in production
+    # TODO change it in production
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "IC_api.settings.local")
     try:
         from django.core.management import execute_from_command_line

@@ -34,9 +34,13 @@ DJANGO_APPS = [
     "django.contrib.sites",
 ]
 
-THIRD_PARTY_APPS= [
-    "rest_framework", "django_filters", "django_countries", "phonenumber_field", "drf_yasg","corsheaders"
-
+THIRD_PARTY_APPS = [
+    "rest_framework",
+    "django_filters",
+    "django_countries",
+    "phonenumber_field",
+    "drf_yasg",
+    "corsheaders",
 ]
 
 LOCAL_APPS = ["core_apps.common", "core_apps.users"]

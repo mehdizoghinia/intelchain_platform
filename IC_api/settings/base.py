@@ -43,6 +43,16 @@ THIRD_PARTY_APPS = [
     "phonenumber_field",
     "drf_yasg",
     "corsheaders",
+    "djcelery_email",
+    "rest_framework.authtoken",
+    "allauth",
+    "allauth.account",
+    "allauth.socialaccount",
+    "dj_rest_auth",
+    "dj_rest_auth.registration",
+    # "taggit",
+    # "django_elasticsearch_dsl",
+    # "django_elasticsearch_dsl_drf",
 ]
 
 LOCAL_APPS = ["core_apps.common", "core_apps.users"]

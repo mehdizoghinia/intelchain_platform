@@ -16,7 +16,7 @@ class BusinessSerializer(serializers.ModelSerializer):
     def get_owner(self, obj):
         first_name = obj.user.first_name.title()
         last_name = obj.user.last_name.title()
-        return f"{first_name} {last_name}"
+        return f"{first_name}  {last_name}"
     
     def update(self, instance, validated_data):
         # Remove 'projects' from validated_data to handle it separately

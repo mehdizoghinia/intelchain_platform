@@ -3,8 +3,11 @@
 .coverage*
 .DS_Store
 staticfiles
+mediafiles
 .envs/*
 !.envs/.local/
+
+client/node_modules
 
 
 # Byte-compiled / optimized / DLL files

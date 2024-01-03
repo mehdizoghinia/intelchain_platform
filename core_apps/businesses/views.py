@@ -1,8 +1,10 @@
 from django.shortcuts import get_object_or_404
 from rest_framework import generics, status
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAuthenticated, AllowAny
 from rest_framework.parsers import MultiPartParser
 from rest_framework.response import Response
+
+from core_apps.businesses.pagination import PropertyPagination
 from .models import Business,Product
 from .serializers import BusinessSerializer,ProductSerializer
 from rest_framework.exceptions import ValidationError
@@ -30,6 +32,8 @@ class ProductDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
 class BusinessListCreateAPIView(generics.ListCreateAPIView):
     queryset = Business.objects.all()
     serializer_class = BusinessSerializer
+    permission_classes = [AllowAny]
+    pagination_class = PropertyPagination
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
@@ -37,7 +41,7 @@ class BusinessListCreateAPIView(generics.ListCreateAPIView):
 class BusinessDetailAPIView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Business.objects.all()
     serializer_class = BusinessSerializer
-    permission_classes = [IsAuthenticated]
+    # permission_classes = [IsAuthenticated]
     
 
     def get_object(self):

@@ -9,6 +9,8 @@ import Header from "./components/Header";
 import HomePage from "./pages/HomePage";
 import BusinessesPage from "./pages/BusinessesPage";
 import ProductPage from "./pages/ProductsPage";
+import BusinessesPage2 from "./pages/BusinessesPage2";
+
 
 const App = () => {
   return (
@@ -27,7 +29,7 @@ const App = () => {
             <Route path="/products" element={<ProductPage />}></Route>
           </Routes>
           <Routes>
-            <Route path="/aboutus"></Route>
+            <Route path="/aboutus" element={<BusinessesPage2 />}></Route>
           </Routes>
           <ToastContainer />
         </main>
